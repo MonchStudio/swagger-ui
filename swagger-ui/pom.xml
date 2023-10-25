@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.monchstudio.swagger</groupId>
+        <artifactId>swagger-ui-parent</artifactId>
+        <version>2.0.8</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>swagger-ui</artifactId>
+    <version>2.1.2</version>
+    <name>swagger-ui</name>
+    <description>swagger-ui is an extended swagger ui implementation based on the springfox interface,It is modified from the ui part of the project https://gitee.com/xiaoym/knife4j.</description>
+
+    <properties>
+        <!--<destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>-->
+        <destDir>${project.build.outputDirectory}/META-INF/resources/</destDir>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <targetPath>META-INF/resources/</targetPath>
+            </resource>
+        </resources>
+    </build>
+
+</project>
